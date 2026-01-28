@@ -1,32 +1,22 @@
 import { Footer as SimpleFooter } from "@/components/ui/simple-footer";
-import { Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import { Facebook, MessageCircle } from "lucide-react";
 
 export const Footer = () => {
   return (
     <SimpleFooter
       logo={
-        <img src="/logoindicar.png" alt="IndiCar Logo" className="h-10 w-auto" />
+        <img src="/indicarbranco.png" alt="Indicar Logo Branco" className="h-10 w-auto" />
       }
       brandName=""
       socialLinks={[
         {
-          icon: <Instagram className="h-5 w-5" />,
-          href: "https://instagram.com",
-          label: "Instagram",
-        },
-        {
           icon: <Facebook className="h-5 w-5" />,
-          href: "https://facebook.com",
+          href: "https://facebook.com/indicar.top",
           label: "Facebook",
         },
         {
-          icon: <Linkedin className="h-5 w-5" />,
-          href: "https://linkedin.com",
-          label: "LinkedIn",
-        },
-        {
           icon: <MessageCircle className="h-5 w-5" />,
-          href: "https://wa.me/5511999999999",
+          href: "https://wa.me/5531993417687",
           label: "WhatsApp",
         },
       ]}
@@ -36,13 +26,10 @@ export const Footer = () => {
         { href: "#crm", label: "CRM" },
         { href: "#faq", label: "FAQ" },
       ]}
-      legalLinks={[
-        { href: "#", label: "Termos de Uso" },
-        { href: "#", label: "Política de Privacidade" },
-        { href: "#", label: "LGPD" },
-      ]}
+      legalLinks={[]}
       copyright={{
-        text: `© ${new Date().getFullYear()} IndiCar`,
+        text: `© ${new Date().getFullYear()} IndiCar · Desenvolvido por ` +
+          '<a href="https://instagram.com/nexorasistemas" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: underline;">Nexora Consulting</a>',
         license: "Todos os direitos reservados",
       }}
     />
