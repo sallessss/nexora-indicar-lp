@@ -3,6 +3,8 @@
 import { cn } from "@/lib/utils";
 import { ReactNode, useEffect, useRef } from "react";
 
+const APP_URL = import.meta.env.VITE_APP_URL;
+
 interface VerticalMarqueeProps {
   children: ReactNode;
   pauseOnHover?: boolean;
@@ -122,10 +124,10 @@ export default function CTAWithVerticalMarquee() {
               Gerencie, qualifique e converta mais leads com inteligência e automação.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up [animation-delay:600ms]">
-              <button className="group relative px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <a href={`${APP_URL}/cadastro-cliente`} className="group relative px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <span className="relative z-10">GRÁTIS 01 LEAD NO CADASTRO</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></div>
-              </button>
+              </a>
               <a href="https://wa.me/5531993417687" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-secondary text-secondary-foreground rounded-md font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg border border-border">
                 <span className="relative z-10">AGENDAR DEMONSTRAÇÃO</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></div>
