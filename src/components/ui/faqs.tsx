@@ -16,7 +16,7 @@ export default function FAQs() {
         {
             id: 'item-3',
             question: 'Como vocês lidam com Leads improdutivos?',
-            answer: 'Não trabalhamos com contestação, enviaremos 30% a mais de leads na aquisição dos pacotes para cobrir possível leads improdutivas e no na aquisição de Lead Avulso, vamos mandar outro Lead a mais para compensar (100% no Avulso).',
+            answer: 'Não trabalhamos com contestação, enviaremos 50% a mais de leads na aquisição dos pacotes para cobrir possível leads improdutivas e no na aquisição de Lead Avulso, vamos mandar outro Lead a mais para compensar (100% no Avulso).',
         },
         {
             id: 'item-4',
